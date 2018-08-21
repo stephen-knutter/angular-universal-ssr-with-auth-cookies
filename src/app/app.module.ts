@@ -20,13 +20,15 @@ import { MessagesComponent }    from './messages/messages.component';
 import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
-// Get cookies
+// Get req stub for (app.server.module)
 export function getRequest() {
   return null;
 }
+// Get res stub for (app.server.module)
 export function getResponse() {
   return null;
 }
+// Get cookies from browser
 export function getCookies() {
   return document && document.cookie.split(';');
 }
